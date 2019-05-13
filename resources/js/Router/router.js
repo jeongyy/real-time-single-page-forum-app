@@ -3,12 +3,16 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
+import Login from '../components/login/Login'
+
 const routes = [
-    //{ path: '/login', component: Login }
+    { path: '/login', component: Login }
 ]
 
 const router = new VueRouter({
-    routes // `routes: routes`의 줄임
+    routes, // `routes: routes`의 줄임
+    hashbang : false,
+    mode : 'history'
 })
 
 export default router
