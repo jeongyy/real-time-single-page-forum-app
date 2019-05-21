@@ -1,7 +1,9 @@
 <template>
-    <v-toolbar>
+    <v-toolbar color="indigo" dark>
     <!-- <v-toolbar-side-icon></v-toolbar-side-icon> -->
-        <v-toolbar-title>Jeongyy</v-toolbar-title>
+        <v-toolbar-title>
+            <router-link class="white--text" to="/">Jeongyy</router-link>
+        </v-toolbar-title>
         <v-spacer></v-spacer>
         <app-notification v-if="loggedIn"></app-notification>
 

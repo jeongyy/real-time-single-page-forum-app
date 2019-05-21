@@ -38,6 +38,10 @@ return [
             'options' => [
                 'cluster' => env('PUSHER_APP_CLUSTER'),
                 'encrypted' => true,
+                /*'host' => 'real127.0.0.1',*/
+                'host' => 'realtimeapp.ping',
+                'port' => 6001,
+                'scheme' => 'http'
             ],
         ],
 
